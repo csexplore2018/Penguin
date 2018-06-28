@@ -30,6 +30,9 @@ public class Penguin {
         Emperor c = new Emperor();
         System.out.println(c.name);
         c.talk();
+        
+        c.eat();
+        b.sleep();
     }
     
 }
@@ -41,6 +44,12 @@ class Animal{
     public void talk(){
         System.out.println("Squak");
     
+    }
+    public void eat(){
+         System.out.println("NomNOm");
+    }
+    public void sleep(){
+         System.out.println("zzzzzzzzzz");
     }
     
 }
@@ -63,4 +72,9 @@ class Emperor extends Chick{
     public void talk(){
         System.out.println("Waddle");
     }
+}
+
+interface Actions{
+    public void eat();
+    public void sleep();
 }
