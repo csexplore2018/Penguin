@@ -24,9 +24,12 @@ public class Penguin {
         a.talk();
  
         Chick b = new Chick();
-        //System.out.println(b.name);
+        System.out.println(b.name);
         b.talk();
        
+        Emperor c = new Emperor();
+        System.out.println(c.name);
+        c.talk();
     }
     
 }
@@ -43,8 +46,21 @@ class Animal{
 }
 
 class Chick extends Animal{
+    
     public String name = "Chick";
+    public String food = "Krill";
+    
     public void talk(){
         System.out.println("Squaking");
     }
- }
+}
+
+class Emperor extends Chick{
+    
+    public String name = "Emp";
+    public String food = "Krill";
+    
+    public void talk(){
+        System.out.println("Waddle");
+    }
+}
