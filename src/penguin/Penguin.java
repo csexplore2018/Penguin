@@ -33,7 +33,7 @@ public class Penguin {
 
 class Animal{
     
-    private String name = "Penguin";
+    public String name = "Penguin";
     public String food = "Krill";
     public void talk(){
         System.out.println("Squak");
@@ -43,6 +43,7 @@ class Animal{
 }
 
 class Chick extends Animal{
+    public String name = "Chick";
     public void talk(){
         System.out.println("Squaking");
     }
